@@ -1,3 +1,0 @@
-git add .
-git commit -m "Initial website upload"
-git push origin main
