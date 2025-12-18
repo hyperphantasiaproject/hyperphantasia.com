@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <!----------------------------------------------------------------------------->
 
 
@@ -11,7 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet">
-    <style>
+
+
+<style>
 
 
 /* --------------- FONTS ---------------- */
@@ -53,16 +56,16 @@ h1 {
       }
 
 
-.fixed-box {
-      position: fixed;   /* fixes it to the viewport */
-      top: 20px;         /* distance from top */
-      left: 20px;        /* distance from left */
-      width: 200px;
-      height: 100px;
-      background-color: lightgreen;
-      border: 2px solid green;
-      padding: 10px;
-    }
+/*.fixed-box { 
+      position: absolute;    <!--fixes it to the viewport-->
+      top: 0px;                  distance from top 
+      left: 0px;                 distance from left 
+      width: 1000px;
+      height: 30px;
+      background-color: rgba(0, 0, 0, 0.623);
+      border: 3px double burlywood;
+      padding: 15px;
+    } */
 
 
 
@@ -120,7 +123,62 @@ figure {
   }
 
 
-/* ------------------------ BUTTONS ------------------------ */  
+
+/* ------------------------ FLOATING MENU / MENU BUTTONS ------------------------ */  
+
+
+
+.floating-menu {
+  position: fixed;       /* sticks at top */
+  top: 0;
+  left: 0;
+  right: 0;              /* full width */
+  height: 25px;
+
+  background-color: burlywood;
+  /*backdrop-filter: blur(6px);*/
+  z-index: 1000;
+
+  display: flex;         /* arrange children horizontally */
+  align-items: center;   /* vertical centering */
+  padding: 0 10px;
+  gap: 10px;              /* spacing between buttons */
+}
+.floating-menu .hp-button-menu {
+  color: black !important;                     /* text always visible */
+  background-color: burlywood !important;
+  text-decoration: none !important;
+
+  display: inline-block;
+  padding: 2px 6px;                            /* fits 25px bar */
+  font-family: 'Girassol', serif;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.floating-menu .hp-button-menu:hover {
+  color: black !important;
+  background-color: blanchedalmond !important;       /* slightly darker on hover */
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .floating-menu {
+    flex-wrap: wrap;      /* buttons wrap if needed */
+    height: auto;
+    padding: 2px 10px;
+  }
+
+  .floating-menu .hp-button-menu {
+    font-size: 0.75rem;
+    padding: 2px 4px;
+    margin-bottom: 2px;
+  }
+}
+
+
+/* ---------------------------- LINKS BUTTONS --------------------------- */
 
 
 .hp-button {
@@ -129,13 +187,13 @@ figure {
   margin: 10px;
   font-family: 'Girassol', serif;
   font-size: 1.1rem;
-  color: burlywood;
+  color: black;
   text-decoration: none;
 
   border: 2px solid burlywood;
   border-radius: 2px;
 
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: burlywood;
   backdrop-filter: blur(20px);
 
   transition: all 0.3s ease;
@@ -152,7 +210,7 @@ figure {
   .hp-button {
     display: block;
     width: fit-content;
-    margin: 20px auto;
+    margin: 10px auto;
     font-size: 1rem;
   }
 }
@@ -173,7 +231,9 @@ figure {
 }
 
 
+
 /* -------------------- LINKS -------------------- */
+
 
 
       body {
@@ -201,9 +261,11 @@ a:active {
   text-decoration: underline;
 }
            }
-     </style>  
-     <title>Hyperphantasia Project</title>
-     <head>
+
+
+</style>  
+<title>Hyperphantasia Project</title>
+<head>
   <link rel="icon" href="favicon.png" type="image/x-icon">
 </head>
 
@@ -224,10 +286,16 @@ a:active {
   document.addEventListener("click", function () {
     document.getElementById("bgm").play();
     const audio = document.getElementById("bgm");
-  audio.volume = 0.05; // 20% volume
+  audio.volume = 0.05; // 5% volume
   }, { once: true });
     </script>
 
+<div class="floating-menu">
+  <a href="#home" class="hp-button-menu">Home</a>
+  <a href="#gallery" class="hp-button-menu">Gallery</a>
+  <a href="#about" class="hp-button-menu">About</a>
+  <a href="#yessirs" class="hp-button-menu">Contact</a>
+</div>
 
     <!-- THIS IS THE TITLE!! --> 
     <h1 style=" color: blanchedalmond; margin-bottom: 20px; font-size: 60px;">
@@ -361,11 +429,9 @@ a:active {
 
 <!----------------------------------------------------------------------------->
 
-
 <!-- THIS IS FOOTER!! -->
 <footer style="border: 0px solid rgba(0, 0, 0, 0.192); background-color: rgba(0, 0, 0, 0.5);">
-  <p style="font-size: 25px; color: blanchedalmond; margin-left: 10px; margin-top: 15px;">Author: Buzaianu Daniel - 
-  <a style="font-size: 25px;" href="https://www.youtube.com/@buzaianudaniel77">Youtube Channel</a></p>
+  <p style="font-size: 25px; color: blanchedalmond; margin-left: 10px; margin-top: 15px;">Author: Buzaianu Daniel.
   <p class="p1" style="margin-left: 8px; margin-bottom: 25px;">Copyright 2025. Hyperphantasia Project</p>
 </footer>
 </html>
