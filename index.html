@@ -14,6 +14,9 @@
     <style>
 
 
+/* --------------- FONTS ---------------- */
+
+
 .girassol-regular {
   font-family: "Girassol", serif;
   font-weight: 400;
@@ -80,6 +83,9 @@ body, html {
 }
 
 
+/* --------------------- IMAGES --------------------- */
+
+
 .column {
   float: left;
   width: 16.66%; /* desktop 8 */ 
@@ -112,6 +118,62 @@ figure {
   img {
     display: block;        /* so caption stays below image */
   }
+
+
+/* ------------------------ BUTTONS ------------------------ */  
+
+
+.hp-button {
+  display: inline-block;
+  padding: 7px 14px;
+  margin: 10px;
+  font-family: 'Girassol', serif;
+  font-size: 1.1rem;
+  color: burlywood;
+  text-decoration: none;
+
+  border: 2px solid burlywood;
+  border-radius: 2px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+
+  transition: all 0.3s ease;
+}
+
+/* Hover effect (desktop) */
+.hp-button:hover {
+  color: black;
+  background-color: burlywood;
+}
+
+/* Mobile optimization */
+@media (max-width: 480px) {
+  .hp-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    font-size: 1rem;
+  }
+}
+
+
+.button-row {
+  display: flex;
+  gap: 10px;                 /* space between buttons */
+  margin: 10px 10px;
+  flex-wrap: wrap;           /* allows stacking on mobile */
+}
+
+/* Center buttons on mobile */
+@media (max-width: 480px) {
+  .button-row {
+    justify-content: center;
+  }
+}
+
+
+/* -------------------- LINKS -------------------- */
 
 
       body {
@@ -184,11 +246,16 @@ a:active {
   <br> white little furball but I have to say sometimes he's a real menace... scratched me a few times already. The plan for this website is as follows: grow it into a huge imagery archive
   <br> people can enjoy and take inspiration from. I am shooting my photographs with my Panasonic camera I bought not too long ago and so far I am pretty satisfied with the results I got.
   <br>
+  <br>More of me below:
   </p>
+  <div class="button-row">
+    <a href="https://www.youtube.com/@buzaianudaniel77" class="hp-button">YouTube</a>
+    <a href="https://www.instagram.com/hyperphantasiaproject?igsh=NDZmZ25uZ3Z1OXRr" class="hp-button">Instagram</a>
+  </div>
+  
 
 
-
-  <div class="row" style="margin-top: 145px;">
+  <div class="row" style="margin-top: 15px;">
     <div class="column"> 
       <figure> 
       <img src="Pictures/Passing through time.jpg" style="width: 290px; margin-left: 2px; margin-bottom: 2px; border: 3px solid burlywood;">
@@ -297,8 +364,8 @@ a:active {
 
 <!-- THIS IS FOOTER!! -->
 <footer style="border: 0px solid rgba(0, 0, 0, 0.192); background-color: rgba(0, 0, 0, 0.5);">
-  <p style="font-size: 25px; color: blanchedalmond; margin-left: 50px; margin-top: 15px;">Author: Buzaianu Daniel - 
+  <p style="font-size: 25px; color: blanchedalmond; margin-left: 10px; margin-top: 15px;">Author: Buzaianu Daniel - 
   <a style="font-size: 25px;" href="https://www.youtube.com/@buzaianudaniel77">Youtube Channel</a></p>
-  <p class="p1" style="margin-left: 15px; margin-bottom: 25px;">Copyright 2025. Hyperphantasia Project</p>
+  <p class="p1" style="margin-left: 8px; margin-bottom: 25px;">Copyright 2025. Hyperphantasia Project</p>
 </footer>
 </html>
