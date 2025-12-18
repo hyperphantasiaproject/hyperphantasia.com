@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!----------------------------------------------------------------------------->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet">
+    <style>
+
+
+.girassol-regular {
+  font-family: "Girassol", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.estonia-regular {
+  font-family: "Estonia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+      body {
+        font-family: 'Girassol';
+        font-size: 20px;
+        background-image: url('Pictures/Background.jpg');
+        background-size: cover;   
+        background-position: top center;
+        background-repeat: no-repeat;
+        height: 10vh;
+        margin: 0; 
+           }
+
+      h1 {
+        font-family: 'Estonia';
+      }     
+
+
+      .p1 {
+        font-family: 'Estonia';
+        font-size: 20px; 
+        color: burlywood;
+      }
+
+
+      .fixed-box {
+      position: fixed;   /* fixes it to the viewport */
+      top: 20px;         /* distance from top */
+      left: 20px;        /* distance from left */
+      width: 200px;
+      height: 100px;
+      background-color: lightgreen;
+      border: 2px solid green;
+      padding: 10px;
+    }
+
+
+
+      body, html {
+  height: 10%;
+}
+
+
+  .text-box {
+    border: 2px solid blanchedalmond;
+    padding: 10px;
+    margin: 10px;
+  }
+
+
+           * {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 16.66%;
+  padding: 12px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+figure {
+    display: inline-block; /* lets figures sit side by side */
+    margin: 0px;          /* spacing between images */
+    text-align: center;    /* centers caption under image */
+  }
+
+  img {
+    display: block;        /* so caption stays below image */
+  }
+
+
+      body {
+a:link {
+  color: burlywood;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: burlywood;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+           }
+     </style>  
+     <title>Hyperphantasia Project</title>
+     <head>
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+
+
+<!----------------------------------------------------------------------------->
+
+
+<!-- THIS IS BODY!! --> 
+<body> <!--style="color: blanchedalmond;"> -->
+
+
+<!-- THIS IS MUSIC!! --> 
+    <audio id="bgm" loop>
+      <source src="Music/The Mamas & The Papas - California Dreamin'.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+  document.addEventListener("click", function () {
+    document.getElementById("bgm").play();
+    const audio = document.getElementById("bgm");
+  audio.volume = 0.05; // 20% volume
+  }, { once: true });
+    </script>
+
+
+    <!-- THIS IS THE TITLE!! --> 
+    <h1 style=" color: blanchedalmond; margin-bottom: 20px; font-size: 60px;">
+      <a href="file:///C:/Users/lightx7/Desktop/TheQuestion/Hyperphantasia%20Project.html" style="text-decoration: none;">&nbsp;&nbsp;exceptionally vivid mental imagery.</a>
+    </h1>
+    
+    <!-- THIS IS THE SECOND TITLE!! --> <h2 style="font: size 6px; margin-left: 38px; margin-bottom: 10px; color: burlywood;">&nbsp;
+        This is a test and will remain so for the time being. Thank you for your patience!</h2>
+
+  <p style="color: blanchedalmond; margin-left: 50px;">So I made this website with the sole purpose in mind to share with others an immersive experience into my photography 
+  world. <br>I hope you enjoy my work as much as I enjoyed creating it. For any questions you can always address me at @hyperphantasiaproject on Instagram.
+  <br>
+  <br>
+  Down below you can see some of my photographs I shot over the span of a couple of months. The cat's name is Fluffy Pants, just in case you're wondering. He's a really cute black and
+  <br> white little furball but I have to say sometimes he's a real menace... scratched me a few times already. The plan for this website is as follows: grow it into a huge imagery archive
+  <br> people can enjoy and take inspiration from. I am shooting my photographs with my Panasonic camera I bought not too long ago and so far I am pretty satisfied with the results I got.
+  <br>
+  </p>
+
+
+
+  <div class="row" style="margin-top: 102px;">
+    <div class="column"> 
+      <figure> 
+      <img src="Pictures/Passing through time.jpg" style="width: 290px; margin-left: 2px; margin-bottom: 2px; border: 3px solid burlywood;">
+      <figcaption style="margin-top: 0px; color: blanchedalmond;">passing through time.</figcaption>
+      </figure>    
+    </div>
+    <div class="column">
+      <figure>
+      <img src="Pictures/The emperor.jpg" style="width: 290px; margin-left: 2px; margin-bottom: 2px; border: 3px solid burlywood;">
+      <figcaption style="margin-top: 0px; color: blanchedalmond;">the emperor.</figcaption>
+      </figure>
+    </div> 
+    <div class="column">
+      <figure>
+      <img src="Pictures/A Christmas in the salt mine.jpg" style="width: 290px; margin-left: 2px; margin-bottom: 2px; border: 3px solid burlywood;">
+      <figcaption style="margin-top: 0px; color: blanchedalmond;">a christmas in the salt mine.</figcaption>
+      </figure>
+    </div>
+    <div class="column">
+      <figure>
+      <img src="Pictures/Fluffy Pants.jpg" style="width: 290px; margin-left: 2px; margin-bottom: 2px; border: 3px solid burlywood;">
+      <figcaption style="margin-top: 0px; color: blanchedalmond;">fluffy pants.</figcaption>
+      </figure>
+    </div>
+    <div class="column">  
+      <figure>
+      <img src="Pictures/A cold day to be outside.jpg" style="width: 290px; margin-left: 2px; margin-bottom: 2px; border: 3px solid burlywood;">
+      <figcaption style="margin-top: 0px; color: blanchedalmond;">a cold day to be outside.</figcaption>
+      </figure>
+    </div>
+     <div class="column">  
+      <figure>
+      <img src="Pictures/Rock n Roll.jpg" style="width: 290px; margin-left: 2px; margin-right: 2px ; margin-bottom: 2px; border: 3px solid burlywood;">
+      <figcaption style="margin-top: 0px; color: blanchedalmond;">rock n roll.</figcaption>
+      </figure>
+    </div>
+  </div>  
+  <div class="row">
+    <div class="column">
+      <figure>
+      <img src="Pictures/A dream like state.jpg" style="width: 290px; margin-left: 2px; margin-bottom: 2px; border: 3px solid burlywood;">
+      <figcaption style="margin-top: 0px; color: blanchedalmond;">a dream like state.</figcaption>
+      </figure>
+    </div>
+    <div class="column">
+      <figure>
+      <img src="Pictures/Rainy day.jpg" style="width: 290px; margin-left: 2px; margin-bottom: 2px; border: 3px solid burlywood;">
+      <figcaption style="margin-top: 0px; color: blanchedalmond;">rainy day.</figcaption>
+      </figure>
+    </div>
+    <div class="column">
+      <figure>
+      <img src="Pictures/The city we live in.jpg" style="width: 290px; margin-left: 2px; margin-bottom: 2px; border: 3px solid burlywood;">
+      <figcaption style="margin-top: 0px; color: blanchedalmond;">the city we live in.</figcaption>
+      </figure>
+    </div>
+    <div class="column">
+      <figure>
+      <img src="Pictures/Are we done.jpg" style="width: 290px; margin-left: 2px; margin-bottom: 2px; border: 3px solid burlywood;">
+      <figcaption style="margin-top: 0px; color: blanchedalmond;">are we done.</figcaption>
+      </figure>
+    </div>
+    <div class="column">
+      <figure>
+      <img src="Pictures/A flower amongst flowers.jpg" style="width: 290px; margin-left: 2px; margin-bottom: 2px; border: 3px solid burlywood;">
+      <figcaption style="margin-top: 0px; color: blanchedalmond;">a flower amongst flowers.</figcaption>
+      </figure>
+    </div>
+    <div class="column">
+      <figure>
+      <img src="Pictures/Lone flower.jpg" style="width: 290px; margin-left: 2px; margin-bottom: 2px; border: 3px solid burlywood;">
+      <figcaption style="margin-top: 0px; color: blanchedalmond;">lone flower.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <figure>
+      <img src="Pictures/This is my bed now.jpg" style="width: 290px; margin-left: 2px; margin-bottom: 2px; border: 3px solid burlywood;">
+      <figcaption style="margin-top: 0px; color: blanchedalmond;">this is my bed now.</figcaption>
+      </figure>
+    </div>
+    <div class="column">
+      <figure>
+      <img src="Pictures/I'm a star.jpg" style="width: 290px; margin-left: 2px; margin-bottom: 2px; border: 3px solid burlywood;">
+      <figcaption style="margin-top: 0px; color: blanchedalmond;">I'm a star.</figcaption>
+      </figure>
+    </div>
+    <div class="column">
+      <figure>
+      <img src="Pictures/I'm photogenic.jpg" style="width: 290px; margin-left: 2px; margin-bottom: 2px; border: 3px solid burlywood;">
+      <figcaption style="margin-top: 0px; color: blanchedalmond;">I'm photogenic.</figcaption>
+      </figure>
+    </div>
+    <div class="column">
+      <figure>
+      <img src="Pictures/It's me again.jpg" style="width: 290px; margin-left: 2px; margin-bottom: 2px; border: 3px solid burlywood;">
+      <figcaption style="margin-top: 0px; color: blanchedalmond;">It's me again.</figcaption>
+      </figure>
+    </div>
+  </div>
+</body> 
+
+<!----------------------------------------------------------------------------->
+
+
+<!-- THIS IS FOOTER!! -->
+<footer style="border: 0px solid rgba(0, 0, 0, 0.192); background-color: rgba(0, 0, 0, 0.5);">
+  <p style="font-size: 25px; color: blanchedalmond; margin-left: 50px; margin-top: 15px;">Author: Buzaianu Daniel - 
+  <a style="font-size: 25px;" href="https://www.youtube.com/@buzaianudaniel77">Youtube Channel</a></p>
+  <p class="p1" style="margin-left: 15px; margin-bottom: 25px;">Copyright 2025. Hyperphantasia Project</p>
+</footer>
+</html>
