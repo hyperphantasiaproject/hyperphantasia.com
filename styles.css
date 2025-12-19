@@ -45,7 +45,7 @@ h2::after {
   background: burlywood;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-right: 20px ;
 }
 
@@ -351,4 +351,5 @@ footer {
   text-align: left;
 
 }
+
 
