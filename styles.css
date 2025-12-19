@@ -38,6 +38,17 @@ h2 {
         font-size: 18px;  
 }      
 
+h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: burlywood;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px ;
+}
+
 p {
         font-family: 'Quicksand';
         font-size: 14px;  
@@ -340,3 +351,4 @@ footer {
   text-align: left;
 
 }
+
