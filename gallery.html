@@ -18,9 +18,6 @@
 <!----------------------------------------------------------------------------->
 
 
-
-
-<head>
   <title>Hyperphantasia Project</title>
   <link rel="icon" href="Pictures/favicon.png" type="image/x-icon">
 </head>
@@ -32,25 +29,19 @@
 <!-- THIS IS BODY!! --> 
 <body class="about-page"> <!--style="color: blanchedalmond;"> -->
 
-
 <!-- THIS IS MUSIC!! --> 
     <audio id="bgm" loop>
       <source src="Music/Whole Inside.mp3" type="audio/mpeg">
     </audio>
 
-    <script>
-  document.addEventListener("click", function () {
-    document.getElementById("bgm").play();
-    const audio = document.getElementById("bgm");
-  audio.volume = 0.05; // 5% volume
-  }, { once: true });
-    </script>
 
 <div class="floating-menu">
   <a href="index.html" class="hp-button-menu">Home</a>
   <a href="#gallery" class="hp-button-menu">Gallery</a>
   <a href="#about" class="hp-button-menu">About</a>
   <a href="contact.html" class="hp-button-menu">Contact</a>
+
+  <div id="clock">00:00</div>
 </div>
 
     <!-- THIS IS THE TITLE!! --> 
@@ -62,7 +53,7 @@
     <h2 style="margin-left: 10px; color: burlywood;">
         This is a test and will remain so for the time being. Thank you for your patience!</h2>
 
-        <p></p>
+<!-- <p></p> -->
 
 
 <!---------------------------------------------------- IMAGES -------------------------------------------------------------->
@@ -202,6 +193,9 @@
     </figure>    
     </div>
   </div>
+
+<script src="scripts.js"></script>
+
 </body> 
 
 <!----------------------------------------------------------------------------->
@@ -211,5 +205,4 @@
   <p style="font-size: 15px; color: blanchedalmond; margin-left: 10px; margin-top: 0px;">Author: Buzaianu Daniel.
   <p class="p1" style="margin-left: 8px; margin-bottom: 5px;">Copyright 2025. Hyperphantasia Project</p>
 </footer>
-
 </html>

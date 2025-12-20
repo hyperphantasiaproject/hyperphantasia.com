@@ -46,12 +46,13 @@ h2::after {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 10px;
-  margin-right: 20px ;
+  margin-right: 20px;
 }
 
 p {
         font-family: 'Quicksand';
-        font-size: 14px;  
+        font-size: 14px;
+        color: blanchedalmond;
 }
 
 .p1 {
@@ -177,7 +178,14 @@ figcaption {
 
 /* ------------------------ FLOATING MENU / MENU BUTTONS ------------------------ */  
 
-
+#clock {
+  margin-left: auto; /* THIS pushes it to the far right */
+  font-family: Quicksand, sans-serif;
+  font-size: 18px;
+  color: black;
+  background-color: burlywood;
+  padding: 3px 6px;
+}
 
 .floating-menu {
   position: fixed;       /* sticks at top */
@@ -234,7 +242,7 @@ figcaption {
 
 .hp-button {
   display: inline-block;
-  padding: 7px 14px;
+  padding: 3px 20px;
   margin: 10px;
   font-family: 'Quicksand', serif;
   font-size: 1.1rem;
@@ -315,6 +323,7 @@ a:active {
            }
 
 
+
 /* -------------------------- FOOTER -------------------------- */
 
 /* line separator between body and footer */
@@ -349,7 +358,4 @@ footer {
   background-color: rgba(0, 0, 0, 0.116);
   padding: 10px 0;
   text-align: left;
-
 }
-
-
