@@ -19,7 +19,7 @@ body {
         font-family: 'Google Sans';
         font-size: 20px;
         margin: 0;
-        background-image: url('Pictures/guitar.jpg');
+        background-image: url('Pictures/guitar.JPG');
         background-attachment: fixed;
         background-size: cover;   
         background-position: center;
@@ -390,3 +390,4 @@ footer {
   padding: 10px 0;
   text-align: center;
 }
+
