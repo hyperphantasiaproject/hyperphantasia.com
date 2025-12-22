@@ -1,48 +1,57 @@
-.quicksand-uniquifier {
-  font-family: "Quicksand", sans-serif;
+.google-sans-uniquifier {
+  font-family: "Google Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: 400;
   font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
 }
 
-.estonia-regular {
-  font-family: "Estonia", cursive;
+
+.lugrasimo-regular {
+  font-family: "Lugrasimo", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
 
 body {
-        font-family: 'Quicksand';
+        font-family: 'Google Sans';
         font-size: 20px;
-        background-image: url('Pictures/The city we live in.jpg');
+        margin: 0;
+        background-image: url('Pictures/guitar.jpg');
         background-attachment: fixed;
         background-size: cover;   
         background-position: center;
         background-repeat: no-repeat;
         height: 10vh;
-        margin: 0; 
+        padding-bottom: 100px;
+       
            }
 
 h1 {
-        font-family: 'Estonia';
-        font-size: 45px;
+        font-family: 'Lugrasimo';
+        font-size: 18px;
         padding-bottom: 5px;
-        text-decoration: underline;
-        text-decoration-color: burlywood;
+        text-decoration: none;
+        text-decoration-color: whitesmoke;
         text-decoration-thickness: 1px;
+        text-align: center;
+        padding-top: 50px;
       }     
 
 h2 {
-        font-family: 'Quicksand';
-        font-size: 18px;  
+        font-family: 'Google Sans';
+        font-size: 18px;
+        text-align: center;
+        color: whitesmoke;
 }      
 
 h2::after {
   content: "";
   display: block;
   height: 1px;
-  background: burlywood;
+  background: whitesmoke;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 10px;
@@ -50,15 +59,15 @@ h2::after {
 }
 
 p {
-        font-family: 'Quicksand';
+        font-family: 'Google Sans';
         font-size: 14px;
-        color: blanchedalmond;
+        color: whitesmoke;
 }
 
 .p1 {
-        font-family: 'Estonia';
-        font-size: 20px; 
-        color: burlywood;
+        font-family: 'Google Sans';
+        font-size: 15px; 
+        color: whitesmoke;
       }
 
 
@@ -81,7 +90,7 @@ body, html {
 
 
 .text-box {
-    border: 2px solid blanchedalmond;
+    border: 2px solid whitesmoke;
     padding: 10px;
     margin: 10px;
   }
@@ -90,13 +99,23 @@ body, html {
            * {
   box-sizing: border-box;
 }
+/* ---------------- BACKGROUND VIDEO ---------------- */
 
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;            /* behind content */
+}
 
 /* --------------------- IMAGES --------------------- */
 
 img {
   margin-bottom: 2px; 
-  border: 3px solid burlywood;
+  border: 20px solid whitesmoke;
 }
 
 .portrait {
@@ -166,7 +185,7 @@ figure {
   }
 
 figcaption {
-  color: burlywood;
+  color: whitesmoke;
   font-size: 16px;
 } 
 
@@ -180,10 +199,10 @@ figcaption {
 
 #clock {
   margin-left: auto; /* THIS pushes it to the far right */
-  font-family: Quicksand, sans-serif;
-  font-size: 18px;
+  font-family: Google Sans, sans-serif;
+  font-size: 1rem;
   color: black;
-  background-color: burlywood;
+  background-color: whitesmoke;
   padding: 3px 6px;
 }
 
@@ -194,7 +213,7 @@ figcaption {
   right: 0;              /* full width */
   height: 30px;
 
-  background-color: burlywood;
+  background-color: whitesmoke;
   /*backdrop-filter: blur(6px);*/
   z-index: 1000;
 
@@ -205,12 +224,12 @@ figcaption {
 }
 .floating-menu .hp-button-menu {
   color: black !important;                     /* text always visible */
-  background-color: burlywood !important;
+  background-color: whitesmoke !important;
   text-decoration: none !important;
 
   display: inline-block;
   padding: 2px 6px;                            /* fits 25px bar */
-  font-family: 'Quicksand', serif;
+  font-family: 'Google Sans', serif;
   font-size: 1rem;
   border-radius: 2px;
   transition: all 0.3s ease;
@@ -218,11 +237,11 @@ figcaption {
 
 .floating-menu .hp-button-menu:hover {
   color: black !important;
-  background-color: blanchedalmond !important;       /* slightly darker on hover */
+  background-color: rgba(0, 0, 0, 0.25) !important;       /* slightly darker on hover */
 }
 
 /* Mobile adjustments */
-@media (max-width: 480px) {
+@media (max-width: 820px) {
   .floating-menu {
     flex-wrap: wrap;      /* buttons wrap if needed */
     height: auto;
@@ -230,7 +249,7 @@ figcaption {
   }
 
   .floating-menu .hp-button-menu {
-    font-size: 0.75rem;
+    font-size: 1rem;
     padding: 2px 4px;
     margin-bottom: 2px;
   }
@@ -239,29 +258,41 @@ figcaption {
 
 /* ---------------------------- LINKS BUTTONS --------------------------- */
 
+.btn-icon {
+  border: none;
+  width: 20px;
+  height: 20px;
+  display: block;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
 
 .hp-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  
   padding: 3px 20px;
   margin: 10px;
-  font-family: 'Quicksand', serif;
+  font-family: 'Google Sans', serif;
   font-size: 1.1rem;
   color: black;
   text-decoration: none;
 
-  border: 2px solid burlywood;
-  border-radius: 2px;
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
 
-  background-color: burlywood;
+  background-color: whitesmoke;
   backdrop-filter: blur(20px);
 
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 /* Hover effect (desktop) */
 .hp-button:hover {
   color: black;
-  background-color: burlywood;
+  background-color: whitesmoke;
 }
 
 /* Mobile optimization */
@@ -295,21 +326,21 @@ figcaption {
 /* link text */
       body {
 a:link {
-  color: burlywood;
+  color: whitesmoke;
   background-color: transparent;
   text-decoration: none;
 }
 
 /* link that was visited */
 a:visited {
-  color: burlywood;
+  color: whitesmoke;
   background-color: transparent;
   text-decoration: none;
 }
 
 /* hover over link */
 a:hover {
-  color: white;
+  color: rgba(255, 255, 255, 0.75);
   background-color: transparent;
   text-decoration: none;
 }
@@ -331,7 +362,7 @@ footer::before {
     content: "";
     display: block;
     height: 1px;
-    background: burlywood;
+    background: whitesmoke;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px ;
@@ -345,7 +376,7 @@ footer::before {
   margin-top: 25px;
   background-color: rgba(0, 0, 0, 0.116);
   padding: 10px 0;
-  text-align: left;
+  text-align: center;
 }
 
 /* standard footer */
@@ -357,5 +388,5 @@ footer {
   margin-top: 700px;
   background-color: rgba(0, 0, 0, 0.116);
   padding: 10px 0;
-  text-align: left;
+  text-align: center;
 }
