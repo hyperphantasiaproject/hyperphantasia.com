@@ -26,3 +26,22 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock();
+
+// ----------------------------
+// Image Pop-up (when image is clicked)
+// ----------------------------
+
+  const images = document.querySelectorAll("img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
+    });
+  });
+
+  lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
