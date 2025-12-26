@@ -197,12 +197,20 @@ figcaption {
 /* ---------- VIDEOS ------------- */
 
 .my-video {
-  width: 80%;
-  max-width: 900px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-  display: block;
-  margin: 40px auto;
+  width: 606px;
+  max-width: 100%;
+  border: 18px solid whitesmoke;
+
+  box-shadow: 0 0 50px gray;
+ /* display: block; */
+}
+
+@media (max-width: 900px) {
+  .my-video {
+    width: 90%;      /* full row */
+    float: none;      /* cancel float */
+    padding: 0;       /* optional */
+  }
 }
 
 /* ---------- LIGHTBOX ---------- */
