@@ -2,11 +2,12 @@
 // Background music (play on first click)
 // -----------------------------
 
-document.addEventListener("click", function () {
-    document.getElementById("bgm").play();
-    const audio = document.getElementById("bgm");
-  audio.volume = 0.05; // 5% volume
-  }, { once: true });
+// document.addEventListener("click", function () {
+//    document.getElementById("bgm").play();
+//    const audio = document.getElementById("bgm");
+//  audio.volume = 0.05; // 5% volume
+//  }, { once: true });
+
 
 // -----------------------------
 // Clock (HH:MM with blink + fade)
