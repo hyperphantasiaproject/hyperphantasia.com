@@ -194,6 +194,16 @@ figcaption {
   font-size: 16px;
 } 
 
+/* ---------- VIDEOS ------------- */
+
+.my-video {
+  width: 80%;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  display: block;
+  margin: 40px auto;
+}
 
 /* ---------- LIGHTBOX ---------- */
 
