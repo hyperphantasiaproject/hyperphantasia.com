@@ -6,8 +6,7 @@
 //    document.getElementById("bgm").play();
 //    const audio = document.getElementById("bgm");
 //  audio.volume = 0.05; // 5% volume
-//  }, { once: true });
-
+// }, { once: true });
 
 // -----------------------------
 // Clock (HH:MM with blink + fade)
@@ -45,4 +44,20 @@ updateClock();
 
   lightbox.addEventListener("click", () => {
     lightbox.style.display = "none";
+  });
+
+
+  /// --------------------
+  /// Website Visits
+  /// --------------------
+
+  if (!localStorage.getItem("visited")) {
+  fetch('https://api.countapi.xyz/hit/hyperphantasia-project');
+  localStorage.setItem("visited", "true");
+}
+
+fetch('https://api.countapi.xyz/get/hyperphantasia-project')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('visitor-count').textContent = data.value;
   });
