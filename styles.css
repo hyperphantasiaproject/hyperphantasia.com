@@ -140,36 +140,67 @@ body, html {
 }
 */
 
-/* --------------------- YouTube Video -------------- */
+/* --------------------- Welcoming Video -------------- */
 
-.video-wrapper iframe {
+video {
   position: absolute;
-  top: 13%;
+  width: 70%;
+  
+  top: 14%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  width: 70%;
-  aspect-ratio: 16 / 9;
-  border: none;
-
-  z-index: 10;
 }
 
-@media (max-width: 1800px) {
-  .video-wrapper {
+@media (max-width: 1600px) {
+  video {
+    width: 80%;
+    max-width: 90%;   /* ensure no overflow */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 480px;
+  }
+}
+
+@media (max-width: 1024px) {
+  video {
     width: 90%;
-    max-width: 90%;
+    max-width: 90%;   /* ensure no overflow */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  video {
+    width: 90%;
+    max-width: 90%;   /* ensure no overflow */
+    display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  
 }
+
+@media (max-width: 480px) {
+  video {
+    width: 90%;
+    max-width: 90%;   /* ensure no overflow */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 350px;
+  }
+}
+
 /* --------------------- IMAGES --------------------- */
 
 .img-box {
   background-image: url('Pictures/Fireworks.png');
   background-size: cover;
   background-position: center;
+  opacity: 0.5;
 
   width: 100%;
   height: 1000px;
@@ -201,15 +232,51 @@ body, html {
   z-index: -1;
 }
 
-@media (max-width: 466px) {
+@media (max-width: 1800px) {
   .img-box {
-    height: 50vh; /* keeps it smaller on tiny screens */
+    height: 78vh;
+
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}  
+
+@media (max-width: 1024px) {
+  .img-box {
+    height: 62vh;
+
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-@media (max-width:1800px) {
+@media (max-width: 768px) {
+  .img-box {
+    height: 62vh;
+
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 542px) {
   .img-box {
     height: 60vh;
+    top: -250px;
+
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 486px) and (min-width: 250px) {
+  .img-box {
+    height: 72vh;
+    top: -250px;
 
     margin-top: auto;
     margin-left: auto;
@@ -218,6 +285,16 @@ body, html {
 }
 
 
+
+@media (orientation: landscape) and (max-width: 1024px) {
+  .img-box {
+    height: 140vh;
+
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 
 img {
@@ -259,23 +336,26 @@ img {
   padding-bottom: 5px;
   justify-content: center;
 }
-@media (max-width: 1024px) {
+
+@media (max-width: 1024px) and (min-width: 250px) {
   .column,
   .column-landscapepictures {
     width: 100%;      /* full row */
     float: none;      /* cancel float */
     padding: 0;       /* optional */
+    justify-content: center;
   }
 } 
 
-/* 
-@media (max-width: 0px) {
+@media (max-width: 1600px) and (min-width: 1024px) {
   .column,
   .column-landscapepictures {
-    width: 33.33%;
+    width: 33.33%;      /* full row */
+    float: left;      /* cancel float */
+    padding: 0;       /* optional */
+    justify-content: center;
   }
-}  
-*/
+} 
 
 
 /* Clearfix (clear floats) */
@@ -523,4 +603,13 @@ footer {
   font-size: 0.85rem;
   opacity: 0.6;
   letter-spacing: 1px;
+}
+
+/* ------------------- Main TEXT -------------------- */
+
+.main-text {
+  position: absolute;
+  top: 5px;
+  width: 100%;
+
 }
